@@ -114,7 +114,7 @@ class _CheckboxGroupState extends State<CheckboxGroup> {
                       onChanged: (widget.disabled != null && widget.disabled!.contains(widget.labels.elementAt(i))) ? null :
                                     (bool? isChecked) => onChanged(isChecked, i),
                       checkColor: widget.checkColor,
-                      activeColor: widget.activeColor ?? Theme.of(context).toggleableActiveColor,
+                      activeColor: widget.activeColor ?? Theme.of(context).toggleButtonsTheme.selectedColor,
                       tristate: widget.tristate,
                     );
 
